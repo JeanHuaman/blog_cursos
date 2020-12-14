@@ -1,0 +1,63 @@
+.courses-texto
+{
+
+    padding: 1rem .5rem;
+    h2{
+        font-family: $titulo-primary;
+        font-weight: 400;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    p
+    {
+        font-family: $texto-primary;
+        font-size: 1.1em; 
+        color: $texto-color;
+        font-weight: 500;
+    }
+}
+
+.courses
+{
+    background-color: #eaeaea;
+    padding: 1rem 0;
+
+}
+.courses-cards
+{
+    margin: 0 auto;
+    width: 80%;
+    font-size: .9rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+    justify-content: center;
+    gap: 25px;
+}
+.course-card
+{    
+    border: 1px solid black;
+    margin: 0;
+    background-color: $card-fondo;
+    font-size: 1rem;
+    .datos
+    {
+        font-family: $course-texto;
+        padding: 5px 10px;
+        display: grid;
+        grid-template-columns: 65px 1fr;
+        grid-template-rows: auto;
+        align-items: baseline;
+        gap:5px;
+        span:nth-child(odd)
+        {
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+    }
+    .course-name
+    {
+        grid-column: span 2;
+        color: #ff0000;
+        font-weight: bold;
+    }
+}

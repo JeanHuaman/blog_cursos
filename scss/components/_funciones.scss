@@ -1,0 +1,16 @@
+
+$mediaQuery :
+(
+    small : 360px,
+    medium : 760px,
+    large : 1024px,
+    xlarge : 1440px
+);
+
+@mixin mediaQuery($tamanio)
+{
+    @media screen and (min-width:map-get($mediaQuery,$tamanio))
+    {
+        @content;
+    }
+}

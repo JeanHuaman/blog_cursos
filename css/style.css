@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap");
+img {
+  max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+.contenedor {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.header {
+  background-color: #525559;
+  height: 50px;
+  color: #ffff99;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.courses-texto {
+  padding: 1rem .5rem; }
+  .courses-texto h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-align: center; }
+  .courses-texto p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    color: #646566;
+    font-weight: 500; }
+
+.courses {
+  background-color: #eaeaea;
+  padding: 1rem 0; }
+
+.courses-cards {
+  margin: 0 auto;
+  width: 80%;
+  font-size: .9rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center;
+  gap: 25px; }
+
+.course-card {
+  border: 1px solid black;
+  margin: 0;
+  background-color: #f2f2f2;
+  font-size: 1rem; }
+  .course-card .datos {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-template-rows: auto;
+    align-items: baseline;
+    gap: 5px; }
+    .course-card .datos span:nth-child(odd) {
+      font-family: sans-serif;
+      font-weight: 600; }
+  .course-card .course-name {
+    grid-column: span 2;
+    color: #ff0000;
+    font-weight: bold; }
